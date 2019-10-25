@@ -1,0 +1,707 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto";
+  font-size: 1em;
+  font-weight: 300;
+  color: #525252;
+  overflow-x: hidden;
+}
+
+/*All Images*/
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto\9; /* ie8 */
+}
+
+/*border box in container*/
+.container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0% 10%;
+  box-sizing: border-box;
+}
+
+.container-bigger {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0% 10%;
+  box-sizing: border-box;
+}
+
+a {
+  color: #ffffff;
+}
+
+h2 {
+  font-size: 2em; /*66px*/
+  font-weight: 600;
+  padding-bottom: 10%;
+}
+
+p {
+  padding: 5% 0;
+  font-size: 1.3em;
+}
+
+/*Start with grid*/
+[class*="col-"] {
+  width: 100%;
+  float: left;
+  /* padding: 15px; */
+}
+
+.row::after {
+  content: " ";
+  clear: both;
+  display: table;
+}
+
+/*Hero Header*/
+/*1- company name and nav*/
+
+.company-logo  {
+  float: left;
+  display: inline-block;
+  width: 15%; 
+  height: 5%;
+  padding-left: 10%;
+  z-index: 1000;
+} 
+
+
+.main_nav {
+  top: 0;
+  left:0;
+  width: 100%;
+  z-index: 999;
+  padding-top: 20px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-decoration: none;
+  background-color:rgba(0, 0, 0, 0.61);
+  position: fixed;
+}
+
+nav ul {
+  list-style: none;
+  text-align: right;
+  display:inline-block;
+  padding-right: 10%;
+}
+nav ul li {
+  display: inline-block;
+  margin-left: 35px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  padding: 1% 0;
+}
+
+nav ul a {
+  text-transform: uppercase;
+  font-size: 0.9em;
+  text-decoration: none;
+}
+nav ul a:hover {
+  color: #cfcfcf;
+}
+
+#show {
+  visibility: hidden;
+  display: none;
+}
+
+/*2- hero background */
+
+header {
+  min-height: 600px;
+  max-height: 40%; /*same height as filter*/
+  background-image: url("../images/ook3cv68g4i11.jpg");
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+/*filter here*/
+#all-header {
+  
+  background-color: rgba(90, 87, 87, 0.787); 
+  min-height: 600px; /*same height as header */
+  max-height: 40%;
+}
+
+/*text and img in hero header*/
+.text-hero {
+  padding: 0;
+  margin-right: 10%;
+  text-align: left;
+}
+
+header h1 {
+  font-size: 3em; /*66px*/
+  color: #ffffff;
+  padding-top: 30%;
+  font-weight: 600;
+}
+header h2 {
+  color: #948e8e;
+  padding: 2% 0;
+}
+header p {
+  color: #ffffff;
+  padding: 0;
+}
+
+.app-store-button {
+  display: inline-block;
+  width: 25%;
+  max-height: 5%;
+  padding-top: 5%;
+  padding-right: 1%;
+  
+}
+
+
+.phone {
+  width: 250px;
+  margin-left:10%;
+  position: absolute;
+  top: 25%;
+  /* z-index: 1000; */
+  display: inline;
+  z-index: 2;
+}
+
+#fire {
+  position: absolute;
+  top: 38%;
+  right: 15.2%;
+  float: right;
+  width: 14%;
+  height: 325px;
+  z-index: 1;
+  display: inline;
+}
+
+/* About Section */
+
+#about {
+  background: #f6f6f6;
+  padding: 10% 0 10% 0;
+  min-height: 400px;
+}
+#about-text div {
+  margin: 2%;
+}
+
+#section2 p {
+  color: #ffffff;
+}
+
+/* Features Section */
+
+#features {
+  padding: 10% 0 10% 0;
+  min-height: 400px;
+  width: 100%;
+}
+.iconFeature img {
+  width: 70%;
+  position: relative;
+  display: inline-block;
+  top: 60px;
+}
+
+.phoneFeature {
+  max-width: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+#features h2 {
+  padding-top: 60px;
+}
+
+/* Review section */
+#reviews {
+  background-color: rgba(42, 41, 41, 0.931);
+  background-image: url("../icon/review.png");
+  background-size: 15%;
+  background-position: 90% 90%;
+  background-repeat: no-repeat;
+  padding: 10% 0 10% 0;
+  min-height: 180px;
+  text-align: center;
+}
+
+#reviews h1 {
+  position: relative;
+  text-align: center;
+  font: 3em sans-serif;
+  margin-bottom: 5%;
+  color: rgb(218, 24, 50);
+}
+
+/*Yummy food section*/
+#yummy {
+  padding: 10% 0 10% 0;
+  background: #f6f6f6;
+  /* min-height: 550px; */
+  /* margin-bottom: 5%; */
+}
+
+#yummy .three-phones div {
+  text-align: center;
+}
+
+
+#yummy .three-phones div #phone-left {
+  margin-top: 30%;
+}
+
+#yummy .three-phones div #phone-right {
+  margin-top: 30%;
+}
+#yummy h1 {
+  position: relative;
+  text-align: center;
+  font: 3em sans-serif;
+  margin-bottom: 5%;
+  color: rgb(218, 24, 50);
+}
+.invisible-div{
+  visibility: hidden;
+}
+
+/*???????????????????*/
+/* 6th section (Contact) */
+
+/* Pricing Section */
+
+#pricing {
+  padding: 10% 0 10% 0;
+  min-height: 400px;
+}
+
+#pricing h1 {
+  position: relative;
+  text-align: center;
+  font: 3em sans-serif;
+  margin-bottom: 5%;
+  color: rgb(218, 24, 50);
+}
+
+/* Style the list */
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 1%;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* Add shadows on hover */
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Pricing header */
+.price .header {
+  background-color: black;
+  color: white;
+  font-size: 25px;
+}
+
+#colorG {
+  background-color: orangered;
+}
+
+/* List items */
+.price li {
+  /* border-bottom: 1px solid #eee; */
+  padding: 5%;
+  text-align: center;
+}
+
+/* Grey list item */
+.price .grey {
+  background-color: #eee;
+  font-size: 40px;
+}
+
+/* The "Sign Up" button */
+.button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+
+
+
+
+#contactInfo div {
+  padding: 10% 0%;
+}
+
+footer #footer-section {
+  padding: 5% 0 5% 0;
+  min-height: 80px;
+  background-color: #f8f9fa;
+  display: inline-block;
+  width: 100%;
+}
+
+#footer-section p {
+  color: darkgrey;
+  text-align: center;
+  /* padding: 10% auto;  */
+}
+
+.clearfix::after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+}
+
+/*----------------------------------------------------------------*/
+
+/*MEDIAAAAAAAAAAAAAAAAAAAAAAAAAAAA QUIEYYYYYYYYYYYYYYYYYYYYYYYYYYY*/
+
+/*sizes between desktop & tablet*/
+@media only screen and (min-width: 1024px) {
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+
+  .order2 {
+    display: none;
+  }
+
+  .slider .quote {
+    font-size: 20px;
+    color:whitesmoke;
+    font-style: italic;
+    text-align: center;
+    padding-left:22%; 
+  }
+}
+
+/*Tablet ipad normal=786, ipad pro=1024*/
+@media only screen and (max-width: 1024px) {
+  .col-m-1 {
+    width: 8.33%;
+  }
+  .col-m-2 {
+    width: 16.66%;
+  }
+  .col-m-3 {
+    width: 25%;
+  }
+  .col-m-4 {
+    width: 33.33%;
+  }
+  .col-m-5 {
+    width: 41.66%;
+  }
+  .col-m-6 {
+    width: 50%;
+  }
+  .col-m-7 {
+    width: 58.33%;
+  }
+  .col-m-8 {
+    width: 66.66%;
+  }
+  .col-m-9 {
+    width: 75%;
+  }
+  .col-m-10 {
+    width: 83.33%;
+  }
+  .col-m-11 {
+    width: 91.66%;
+  }
+  .col-m-12 {
+    width: 100%;
+  }
+
+  .main_nav {
+    display: none;
+  }
+
+  header h1 {
+    /*in media query*/
+    padding-top: 10%;
+    font-size: 2.8em;
+  }
+
+  header h2 {
+    /*in media query*/
+    font-size: 1.5em;
+  }
+
+  header p {
+    /*in media query*/
+    font-size: 1em;
+  }
+
+  #disapear-phone {
+    display: none;
+  }
+
+  .app-store-button {
+    display: inline-block;
+    width: 40%;
+    max-height: 5%;
+    padding-top: 5%;
+    padding-right: 1%;
+    
+  }
+
+
+  .logo{
+    /*reduce hamburger icon size*/
+    width: 8%;
+    /* display: inline; */
+  }
+
+  .company-logo  {
+    float: left;
+    display: inline-block;
+    position: relative;
+    width: 90%; 
+    height: 5%;
+    padding-left: 100%;
+    z-index: 1999;
+  } 
+
+  .order1 {
+    display: none;
+  }
+
+  /*hide and show content in menu (hamburger) classes*/
+
+  #show {
+    visibility: visible;
+    display: block;
+  }
+  #show .logo {
+    /* background-color: black; */
+    width: 35px;
+    /* position: absolute;  */
+    top: 0%; 
+    left: 10%; 
+    margin-top: 3%;
+  }
+
+  /*show & hide*/
+  #content {
+    display: none;
+  }
+  #show:target #content {
+    display: inline-block;
+  }
+  #show:target #open {
+    display: none;
+  }
+
+  /*menu appearance*/
+  #content {
+    background-color: rgba(0, 0, 0, 0.61);
+    width: 80%; /*select width in parent*/
+    margin: 5% 1% 0% 1%;
+    
+  }
+
+  #content ul {
+    list-style: none;
+    /* display: block; by default with div*/
+    overflow: hidden;
+    /* background-color: aqua; */
+    text-align: center;
+  }
+  #content ul li {
+    margin-left: 35px;
+    margin-right: 35px;
+    /* display: block; by default with div*/
+    line-height: 3;
+    letter-spacing: 1px;
+    border-bottom: 1px solid red;
+  }
+
+  #content ul a { 
+    text-transform: uppercase;
+    font-size: 0.9em;
+    text-decoration: none;
+    color: red; /*text in drop down*/
+  }
+  #content ul a:hover {
+    color: #cfcfcf;
+  }
+
+  #close { /* X button*/
+    background-color: rgba(255, 0, 0, 0.596);
+    border-radius: 100%;
+    position: absolute; 
+    top: 0%; 
+    left: 10%; 
+    z-index: 2000;
+    width: 10px;
+  }
+
+  .text-hero div {
+    padding: 2% 5%;
+    /* background-color: red; */
+    margin-left: 3%;
+  }
+
+  #bird {
+    display: none;
+  }
+
+  .slider {
+    height: 10px;
+    width: 680px;
+    margin: 0 auto 0;
+    overflow: visible;
+    position: relative;
+    text-align: left;
+    /* background-color: #ad4747; */
+    box-sizing: border-box;
+    padding: 0 important!;
+  }
+
+  .slider .quote {
+    font-size: 16px !important;
+    color:whitesmoke;
+    font-style: italic;
+    text-align: left;
+    padding-left:2% !important; 
+  }
+  
+  .slider .source {
+    font-size: 15px !important;
+    text-align: center;
+    padding-right:50% !important; 
+    /* background-color: green; */
+  }
+}
+
+/*Phone 360-galaxy 375-iphone 411-pixel*/
+@media only screen and (max-width: 414px) {
+  .col-s-1 {
+    width: 8.33%;
+  }
+  .col-s-2 {
+    width: 16.66%;
+  }
+  .col-s-3 {
+    width: 25%;
+  }
+  .col-s-4 {
+    width: 33.33%;
+  }
+  .col-s-5 {
+    width: 41.66%;
+  }
+  .col-s-6 {
+    width: 50%;
+  }
+  .col-s-7 {
+    width: 58.33%;
+  }
+  .col-s-8 {
+    width: 66.66%;
+  }
+  .col-s-9 {
+    width: 75%;
+  }
+  .col-s-10 {
+    width: 83.33%;
+  }
+  .col-s-11 {
+    width: 91.66%;
+  }
+  .col-s-12 {
+    width: 100%;
+  }
+
+  header h1 {
+    font-size: 2.5em;
+  }
+  header h2 {
+    font-size: 1.5em;
+  }
+  header p {
+    font-size: 0.8em;
+  }
+
+  .app-store-button {
+    display: inline-block;
+    max-height: 40px;
+  }
+
+  .text-hero div {
+    padding: 5%;
+    /* background-color: red; */
+    text-align: center;
+    margin-left: 3%;
+  }
+
+  #show .logo {
+    /*both hide and show hamburger icons*/
+    /* background-color: black; */
+    width: 50px;
+    position: absolute;
+    left: 82%;
+    margin-top: 10%;
+  }
+}

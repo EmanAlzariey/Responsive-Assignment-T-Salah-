@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Challenge1</title>
-    <link rel="stylesheet" href="main.css">
+    <title>APP LANDING PAGE</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:100,300,400,500,,600,700' rel='stylesheet' type='text/css'>    
+    <link rel="stylesheet" href="./css/slide.css">
    
 </head>
 <body>
@@ -13,46 +15,70 @@
 
     <section id="all-header">
  
-        <div class="container-bigger clearfix">
+        <div class="container clearfix">
           <div class="row col-m-12">
-          
-           
 
-              
         
           <div class="main_nav">
                <!--navbar-->
            
                 <nav> 
                        
-              <ul>
-                  <a  class="company-name"href="">LOGO HERE</a>
-                <li><a href="#section2">About</a></li>
-                <li><a  href="#section3">Services</a></li>  
-                <li><a  href="#section4">profilio</a></li>     
-                <li><a  href="#section6">Contact</a></li>      
-              </ul>   
+                  <ul>
+                    <img class="company-logo" src="./images/1.png" alt="logo">
+                    <li><a href="#about">About</a></li>
+                    <li><a  href="#features">Features</a></li>  
+                    <li><a  href="#reviews">Reviews</a></li> 
+                    <li><a  href="#yummy">Yummy</a></li>     
+                    <li><a  href="#pricing">Pricing</a></li>     
+                    <li><a  href="#contact">Contact</a></li>      
+                  </ul>   
               
            
                 </nav>
           </div>
 
+              <!--hide and show content in menu (hamburger)-->
+
+               <div id="show">
+                <a href="#show"><img id="open" class="logo" src="./icon/menu-alt-512.png" alt="menu-hamburger"> </a>
+                  <div id="content">
+                      <a href="#hide"><img id="close" class="logo" src="./icon/menu-x.png" alt="menu-hamburger"> </a>
+                    <ul>
+                      <li><a href="#about">About</a></li>
+                      <li><a  href="#features">Features</a></li> 
+                      <li><a  href="#reviews">Reviews</a></li>
+                      <li><a  href="#yummy">Yummy</a></li>         
+                      <li><a  href="#pricing">Pricing</a></li>     
+                      <li><a  href="#contact">Contact</a></li>      
+                  </ul>  
+                     
+                  </div>
+                  
+              </div> <!-- end menu icon -->
   
        
             <!--Text & img in hero-->
-            <div class="container">
+            <div class="container clearfix">
                   <div  class="row text-hero">
-                      <div class="col-m-12 col-12">  
+                      <div class="col-m-12 col-8">  
 
                            
-                <h1>YOUR WEB TITLE HERE</h1>
+                <h1>EAT GOOD, FEEL GOOD</h1>
+                <h2>You can't BUY HAPPINESS, but you can BUY FOOD! <br> And that's the SAME THING!</h2><br>
                 <p>Lorem ipsum dolor sit amet, abore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-               
-                        <button class="orangeBtn"> Find Out More </button>
+                <a href="#"><img src="./images/Apple-Store.png" class="app-store-button" alt="Download on Apple Store"></a> 
+                <a href="#"><img src="./images/Google-Play.png"class="app-store-button" alt="Download on Google Play"></a>
 
                     </div>
-                  
-                    
+                    <!--phone & fire-->
+                    <div id="disapear-phone" class=" col-3">
+
+                      <img src="./images/this_phone.png" class="phone" alt="phone">          
+                      <img id="fire" src="./images/source.gif" alt="fire gif"> 
+  
+                      </div>
+
                     </div> <!--end text div-->  
 
                   </div>
@@ -63,148 +89,261 @@
 
     <main>
 
-        <div id="section2" >
+       <!-- About Section -->
+        <div id="about" >
     <div class="container clearfix">
 
-        <div  class="row text-hero">
-            <div class="col-m-12 col-12">  
-
-                 
-      <h2 style="color:white;">We've Got What You've Need</h2>
-      <p>Lorem ipsum dolor sit amet, abore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <div class="row col-m-12">
      
-              <button class="whiteBtn"> Get Started!</button>
 
-          </div>
+            <div id="about-text" class="col-7"> <!--take about 60% and put two div in it-->
         
-          
-          </div>
+                <h1>At vero eos accusamus et iusto odio dignissimos.</h1>
+        
+                <div class="row col-4 col-m-5"><!--first div--> <!--take about half the parent-->
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>        
+                </div>
+        
+                <div class="row col-4 col-m-5"> <!--Second div--> <!--take 41% of 58%(col7)-->
+                  <p>Lorem i labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+        
+             </div>
+            
+            <!--bird on right seperate div in the right-->
+            <div class="row col-5"> 
+              <img id="bird"  src="./images/1.png">
+             </div> <!--bird icon on right-->
+        
+            </div>
     </div>
 </div>
       
 
-    <!-- 3rd Section -->
+  <!-- Features Section -->
+<section id="features">
 
-<section id="section3">
-    <div class="container-bigger ">
-
-        <h2>Your Favorite Source of Theme</h2>
+    <div class="container clearfix">
+    <div class="row">
+      
   
-        <div class="row col-3">
+     <!--Column on left-->  
+  
+  
+        <div class="col-4"> <!--give the left 25%-->
+  
+  
+          <!--(1)location-->
+          <div class="row">
+            <div class="col-2 col-m-1"> <span class="iconFeature"><img src="./icon/location.PNG" alt=""></span> </div> <!--put icon here-->
+            <div class="col-10 col-m-10">
+              <h2>Location</h2> 
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+            </div>
+          </div>
+  
+  
+          <!--(2)ideas-->
+          <div class="row">
+            <div class="col-2 col-m-1"> <span class="iconFeature"><img src="./icon/ideas.PNG" alt=""></span> </div>
+            <div class="col-10 col-m-10">
+              <h2>Ideas</h2> 
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+            </div>
+          </div>
+  
+  
+            <!--(3)Costomisable-->
+          <div class="row">
+            <div class="col-2 col-m-1"> <span class="iconFeature"><img src="./icon/cutomize.PNG" alt=""></span> </div>
+            <div class="col-10 col-m-10">
+              <h2>Customisable</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+            </div>
+          </div>
+  
+        </div>
+  
+  
+  <!--phone pic in middle-->
+        <div class="col-4 col-m-10"> <img src="./images/phone2.png" class="phoneFeature" alt="phone mockup"> </div>
+      
+      
+     <!--Column on right-->
+        <div class="col-4">
+  
+          <!--(4)Secure-->
+          <div class="row order1">
+            <div class="col-10 ">
+              <h2>Secure</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+            </div>
+            <div class="col-2 "> <span class="iconFeature"><img src="./icon/key.PNG" alt=""></span> </div>
+          </div>
+  
+          <!--change order for media query (4)Secure-->
+          <div class="row order2">
+              <div class="col-m-1"> <span class="iconFeature"><img src="./icon/key.PNG" alt=""></span> </div>
+              <div class="col-m-10">
+                  <h2>Secure</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                </div>
+            </div>
+  
+  
+          <!--(5)Efficient-->
+          <div class="row order1">
+            <div class="col-10">
+              <h2>Efficient</h2> 
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+            </div>
+            <div class="col-2"> <span class="iconFeature"><img src="./icon/full-battery.PNG" alt=""></span> </div>
+          </div>
+  
+            <!--change order for media query (5)Efficient-->
+            <div class="row order2">
+                <div class="col-m-1"> <span class="iconFeature"><img src="./icon/full-battery.PNG" alt=""></span> </div>
+                <div class="col-m-10">
+                    <h2>Efficient</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                  </div>
+              </div>
+  
+  
+          <!--(6)Powerful-->
+          <div class="row order1">
+            <div class="col-10">
+              <h2>Powerful</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+            </div>
+            <div class="col-2"> <span class="iconFeature"><img src="./icon/power.PNG" alt=""></span> </div>
+          </div>
+  
+           <!--change order for media query (6)Powerful-->
+           <div class="row order2">
+              <div class="col-m-1"> <span class="iconFeature"><img src="./icon/power.PNG" alt=""></span> </div>
+              <div class="col-m-10">
+                  <h2>Powerful</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                </div>
+            </div>
+  
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--end of Feature Section-->
 
-            <img src="./images/s1.PNG" alt="">
 
-            <div id="section3-text">
-         <h3>Study Themes</h3>
-          <p>Lorem ipsum dolor sit amet, sunt maxime necessitatibus libero fugiat dolor odit</p>
-        </div>
-        </div>
-    
-        <div class="row col-3">
-    
-            <img src="./images/s2.PNG" alt="">
-         
-            <div id="section3-text">
-                <h3>Up to date</h3>
-                 <p>Lorem ipsum dolor sit amet, sunt maxime necessitatibus libero fugiat dolor odit</p>
-               </div>
-        </div>
-    
-        <div class="row col-3">
-    
-            <img src="./images/s3.PNG" alt="">
-         
-            <div id="section3-text">
-                <h3>Ready to publish</h3>
-                 <p>Lorem ipsum dolor sit amet, sunt maxime necessitatibus libero fugiat dolor odit</p>
-               </div>
-        </div>
 
-        <div class="row col-3">
-    
-            <img src="./images/s4.PNG" alt="">
-         
-            <div id="section3-text">
-                <h3>Made with love</h3>
-                 <p>Lorem ipsum dolor sit amet, sunt maxime necessitatibus libero fugiat dolor odit</p>
-               </div>
+
+<!--Review section-->
+<section id="reviews">
+    <div class="container clearfix">
+        <div class="row">
+            <h1>Reviews</h1>
+
+            <div class="content-slider">
+              <div class="slider">
+                <div class="mask">
+                  <ul>
+                    <li class="anim1">
+                      <div class="quote">
+                          <div class="col-1 col-m-1"> <span class=""><img style="border-radius: 100%;" src="./icon/T salah.PNG" alt=""></span> </div>
+                          <div class="col-6 col-m-5" style="padding-left:4%;">  You did GOOD by the way !!!  </div><br>
+                      <div class="source"> - T. Salah </div>
+                    </li>
+                    <li class="anim2">
+                        <div class="quote">
+                            <div class="col-1 col-m-1"> <span class=""><img style="border-radius: 100%;" src="./icon/TMuhanned.PNG" alt=""></span> </div>
+                            <div class="col-6 col-m-5" style="padding-left:4%;">  I DON'T CARE !!  </div><br>
+                        <div class="source" >- T. Muhanned </div>
+                      </li>
+                    <li class="anim3">
+                        <div class="quote">
+                            <div class="col-1 col-m-1"> <span class=""><img style="border-radius: 100%;" src="./icon/mustafa.PNG" alt=""></span> </div>
+                            <div class="col-6 col-m-5" style="padding-left:4%;">  Eman, how are you ?!  </div><br>
+                        <div class="source" >-Mustafa </div>
+                      </li>
+                      
+                    <li class="anim4">
+                        <div class="quote">
+                            <div class="col-1 col-m-1"> <span class=""><img style="border-radius: 100%;" src="./icon/Aiman.PNG" alt=""></span> </div>
+                            <div class="col-6 col-m-5" style="padding-left:4%;"> Ya Salaaaam !! </div><br>
+                        <div class="source" >- Aiman</div>
+                      </li>
+                    <li class="anim5">
+                        <div class="quote">
+                            <div class="col-1 col-m-1"> <span class=""><img style="border-radius: 100%;" src="./icon/avatar.jpg" alt=""></span> </div>
+                            <div class="col-6 col-m-5" style="padding-left:4%;">  Hope you liked it ?! ^_* </div><br>
+                        <div class="source" >- Me</div>
+                      </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
         </div>
+    </div>
+</section> <!--end of Review section-->
+
+<!--Yummy food section-->
+<section id="yummy">
+    <div class="container clearfix">
+      <div class="row col-12 three-phones">
+          <h1>YUMMY</h1>
+      <div class="col-3 col-m-3"> <div id="phone-left"><img src="./images/phone-left.png" alt=""></div></div>
+     
+      <div class="col-1 col-m-1 invisible-div">. </div>
+      <div class="col-4 col-m-4"> <div id="phone-middle"><img src="./images/phone-middle.png" alt=""></div> </div>
+      <div class="col-1 col-m-1 invisible-div">.</div>
+      
+      <div class="col-3 col-m-3"> <div id="phone-right"><img src="./images/phone-right.png" alt=""></div> </div>
+  
+    </div>
+  
     </div>
   </section>
 
 
 
-<!--section4-->
-       <section id="section4">
-          <div class="clearfix">
 
-                <img class="col-4" src="./images/1.jpg" alt="">
-                <img class="col-4" src="./images/2.jpg" alt="">
-                <img class="col-4" src="./images/3.jpg" alt="">
-                <img class="col-4"  src="./images/4.jpg" alt="">
-                <img class="col-4" src="./images/5.jpg" alt="">
-                <img class="col-4" src="./images/6.jpg" alt="">
-          
-          </div>
-  
-        </section>
-  
+  <!--Pricing section-->
+<section id="pricing">
+    <div class="container">
+      <div class="row">
+       <h1>PRICING</h1>
 
-
-    <!--section5-->
-    <section id="section5">
-        <div class="container clearfix">
-
-            <div  class="row text-hero">
-                <div class="col-m-12 col-12">  
-    
-                     
-         
-          <h2 style="color:white;">Free Download From this Link</h2>
-         
-                  <button class="whiteBtn"> Download Now!</button>
-    
-              </div>
-            
-              
-              </div>
+      <!--Basic Pricing-->
+ 
+      <div class="col-6">
+          <ul class="price">
+            <li class="header">Basic Restaurant App Price <br> $ 23.99 / year</li>
+            <li>Unlimited Food Menu</li>
+            <li>Any one Platform (iPhone / Android)</li>
+            <li>Dynamic Food Menu Categories</li>
+            <li>Directions on Map</li>
+            <li>Easy to manage CMS</li>
+            <li class="grey"><a href="#" class="button">Get Started</a></li>
+          </ul>
         </div>
-      </section>
 
-
-
-
-      <!--6th section-->
-  <section id="section6">
-      <div class="container clearfix">
-
-          <div  class="row text-hero col-m-12 col-12"> 
-  
-                   
-        <h2 >We've Got What You've Need</h2>
-        <p>Lorem ipsum dolor sit amet, abore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-       
-                <div class="row" id="contactInfo">
-
-                    <div class="col-6">
-                      <a href="#"><img src="./images/phone.PNG" alt="phone icon"></a>
-                      <h3>+1(20)44444666</h3>
-
-                    </div>
-
-                    <div class="col-6">
-                        <a href="#"><img src="./images/message.PNG" alt="message icon"></a>
-                        <h3><a style="color:red;" href="mailto:contact@yourwebsite.com">contact@yourwebsite.com</a></h3>
-  
-                      </div>
-
-                    </div>
-  
-            
-          
-            
-            </div>
+         <!--Pro Pricing-->
+         <div class="col-6">
+            <ul class="price">
+              <li class="header" id="colorG">Premium Restaurant App Cost <br> $ 77 / year</li>
+              <li>Unlimited Food Menu</li>
+              <li style="color:red;">Both Platform (iPhone & Android)</li>
+              <li>Push Notification Offers</li>
+              <li>Featured Food Menu Item</li>
+              <li>Easy to manage CMS</li>
+              <li class="grey"><a href="#" class="button">Sign Up</a></li>
+            </ul>
+          </div>
+      
       </div>
+    </div>
+</section>
 
     </main>
 
